@@ -1,0 +1,166 @@
+body {
+    margin: 0px;
+    background-image: url('backgroundimg.jpg');
+    background-position: cover;
+    background-attachment: fixed;
+    padding: 30px;
+}
+
+#TBwrapper{
+    width: 60%;
+    margin: auto;
+    padding: 30px;
+    background-color: rgba(95, 95, 95, 0.692);
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+
+    h1{
+        text-align: center;
+        margin-bottom: 40px;
+        font-family: 'Vollkorn', serif;
+        letter-spacing: 2px;
+    }
+    
+    button {
+        margin-top: 30px;
+        width: 20%;
+        border: none;
+        border-radius: 10px;
+        padding: 5px;
+        font-size: 18px;
+        font-family: 'Vollkorn', serif;
+        background-color: rgb(8, 185, 88);
+        float: right;
+        margin-right: 70px;
+    }
+
+    .input-infos {
+        margin: auto;
+        width: 80%;
+        border-bottom: solid 2px black;
+        padding: 30px;
+
+        span {
+        font-size: 20px;
+        margin: 20px;
+        font-family: 'Vollkorn', serif;
+        }
+
+        input {
+        font-size: 18px;
+        margin: 10px;
+        padding: 5px;
+        border-radius: 10px;
+        border: none;
+        font-family: 'Vollkorn', serif;
+        }
+    
+        select {
+        font-size: 20px;
+        margin: 10px;
+        padding: 5px;
+        border-radius: 10px;
+        border: none;
+        font-family: 'Vollkorn', serif;
+        margin-bottom: 40px;
+        }
+
+        h3{
+            font-family: 'Vollkorn', serif; 
+        }
+
+        textarea {
+            font-size: 20px;
+            margin: 10px;
+            padding: 5px;
+            border-radius: 10px;
+            border: none;
+            font-family: 'Vollkorn', serif;
+        }
+    }
+}
+
+#TPwrapper{
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
+    background-color:#ffffff;
+    position: relative;
+
+    #back-button {
+        position: absolute;
+        bottom: 10px;
+        right: 15px;
+        width: 20%;
+        background-color: #270128;
+        font-size: 18px;
+        font-family: 'Prata', serif;
+        color: rgb(253, 253, 253);
+        border-radius: 10px;
+    }
+
+    #header {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #ecd5ea8a;
+        padding: 30px;
+
+        #headerimg{
+            width: 40%;
+
+            img {
+                width: 100px;
+                border-radius: 50%;
+                margin-left: 50px;
+            }
+        }
+
+        #header-infos {
+            width: 60%;
+            text-align: center;
+            font-family: 'Prata', serif;
+
+            h1{
+                text-transform: uppercase;
+            }
+        }
+        
+        
+    }
+
+    #main-sidebar {
+
+        display: flex;
+        flex-direction: row;
+        font-family: 'Prata', serif;
+
+        h3 {
+            text-align: center;
+            text-decoration: underline;
+            margin-bottom: 30px;
+        }
+
+       ion-icon {
+            margin-right: 10px;
+        }
+
+        #sidebar {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+            background-color: #ecd5ea5b;
+        }
+
+        #main {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+        }
+    }
+}
+

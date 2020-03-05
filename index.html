@@ -1,0 +1,106 @@
+<html>
+
+<head>
+
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playball|Prata&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="app">
+        <div id="TBwrapper" v-if="show">
+        <h1>CV Builder</h1>
+        <div class="input-infos" id="personal-infos">
+            <span>Ime </span>
+            <input v-model="person.firstName" type="text" placeholder="Unesite Vase ime" required><br>
+            <span>Prezime </span>
+            <input v-model="person.lastName" type="text" placeholder="Unesite Vase prezime" required><br>
+            <span>Pozicija za koju aplicirate</span>
+            <select v-model="person.position" id="position" required>
+                <option value="Junior Developer">Junior Developer</option>
+                <option value="Senior Developer">Senior Developer</option>
+            </select>
+        </div>
+        <div class="input-infos">
+            <span>Broj telefona </span>
+            <input v-model = 'person.phoneNum' type="text" placeholder="Unesite broj Vaseg telefona" required><br>
+            <span>E-mail </span>
+            <input v-model = 'person.email' type="text" placeholder="Unesite Vas e-mail" required><br>
+            <span>Adresa </span>
+            <input v-model = 'person.address' type="text" placeholder="Unesite Vasu adresu" required><br>
+            <span>Linkedin profil </span>
+            <input v-model = 'person.linkedin' type="text" placeholder="Unesite Vas linkedin profil" required><br>
+        </div>
+        <div class="input-infos">
+            <h3>Education</h3>
+            <textarea v-model = 'person.education' rows="7" cols="40" placeholder="Unesite informacije o Vasoj edukaciji"></textarea>
+        </div>
+        <div class="input-infos">
+            <h3>Expertise</h3>
+            <textarea v-model = 'person.expertise' rows="7" cols="40" placeholder="Unesite Vase vjestine"></textarea>
+        </div>
+        <div class="input-infos">
+            <h3>Profile</h3>
+            <textarea v-model = 'person.profile' rows="3" cols="40" placeholder="Unesite Vas profil"></textarea>
+        </div>
+        <div class="input-infos">
+            <h3>Experience</h3>
+            <textarea v-model = 'person.experience' rows="7" cols="40" placeholder="Unesite informacije o Vasem radnom iskustvu"></textarea>
+        </div>
+        <button @click="show=!show">Save</button>
+    </div>
+
+    <div id="TPwrapper" v-if="!show">
+        <button id="back-button"  @click="show=!show">Back to CV Builder</button>
+        <div id="header">
+            <div id="headerimg">
+                <img src="user-image.png">
+            </div>
+            <div id="header-infos">
+                <h1>{{person.firstName + ' ' + person.lastName}}</h1>
+                <h2>{{person.position}}</h2>
+            </div>
+        </div>
+        <div id="main-sidebar">
+            <div id="sidebar">
+                <div id="contact-infos">
+                    <h3>CONTACT ME</h3>
+                    <p><ion-icon name="call-outline"></ion-icon>{{person.phoneNum}}</p>
+                    <p><ion-icon name="mail-outline"></ion-icon>{{person.email}}</p>
+                    <p><ion-icon name="location-outline"></ion-icon>{{person.address}}</p>
+                    <p><ion-icon name="logo-linkedin"></ion-icon>{{person.linkedin}}</p>
+                </div>
+                <div id="education-infos">
+                    <h3>EDUCATION</h3>
+                    <p>{{person.education}}</p>
+                </div>
+                <div id="experties-infos">
+                    <h3>EXPERTISE</h3>
+                    <ul>
+                        <li>{{person.expertise}}</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="main">
+                <div id="profile-infos">
+                    <h3>PROFILE</h3>
+                    <p>{{person.profile}}</p>
+                </div>
+                <div id="experience-infos">
+                    <h3>EXPERIENCE</h3>
+                    <p>{{person.experience}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

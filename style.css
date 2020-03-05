@@ -1,0 +1,194 @@
+body {
+  margin: 0px;
+  background-image: url("backgroundimg.jpg");
+  background-position: cover;
+  background-attachment: fixed;
+  padding: 30px;
+}
+
+#TBwrapper {
+  width: 60%;
+  margin: auto;
+  padding: 30px;
+  background-color: rgba(95, 95, 95, 0.692);
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+}
+
+#TBwrapper h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: 'Vollkorn', serif;
+  letter-spacing: 2px;
+}
+
+#TBwrapper .cancel {
+  position: absolute;
+  top: -20px;
+  right: -50px;
+  width: 7%;
+  background-color: rgba(255, 0, 0, 0);
+  font-size: 30px;
+  font-family: 'Vollkorn', serif;
+  color: red;
+}
+
+#TBwrapper button {
+  margin-top: 30px;
+  width: 20%;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 18px;
+  font-family: 'Vollkorn', serif;
+  background-color: #08b958;
+  float: right;
+  margin-right: 70px;
+}
+
+#TBwrapper .input-infos {
+  margin: auto;
+  width: 80%;
+  border-bottom: solid 2px black;
+  padding: 30px;
+}
+
+#TBwrapper .input-infos span {
+  font-size: 20px;
+  margin: 20px;
+  font-family: 'Vollkorn', serif;
+}
+
+#TBwrapper .input-infos input {
+  font-size: 18px;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+  font-family: 'Vollkorn', serif;
+}
+
+#TBwrapper .input-infos select {
+  font-size: 20px;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+  font-family: 'Vollkorn', serif;
+  margin-bottom: 40px;
+}
+
+#TBwrapper .input-infos h3 {
+  font-family: 'Vollkorn', serif;
+}
+
+#TBwrapper .input-infos textarea {
+  font-size: 20px;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+  font-family: 'Vollkorn', serif;
+}
+
+#TPwrapper {
+  width: 80%;
+  margin: auto;
+  padding-top: 20px;
+  background-color: #ffffff;
+  position: relative;
+}
+
+#TPwrapper #back-button {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  width: 20%;
+  background-color: #270128;
+  font-size: 18px;
+  font-family: 'Prata', serif;
+  color: #fdfdfd;
+  border-radius: 10px;
+}
+
+#TPwrapper #header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #ecd5ea8a;
+  padding: 30px;
+}
+
+#TPwrapper #header #headerimg {
+  width: 40%;
+}
+
+#TPwrapper #header #headerimg img {
+  width: 100px;
+  border-radius: 50%;
+  margin-left: 50px;
+}
+
+#TPwrapper #header #header-infos {
+  width: 60%;
+  text-align: center;
+  font-family: 'Prata', serif;
+}
+
+#TPwrapper #header #header-infos h1 {
+  text-transform: uppercase;
+}
+
+#TPwrapper #main-sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-family: 'Prata', serif;
+}
+
+#TPwrapper #main-sidebar h3 {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 30px;
+}
+
+#TPwrapper #main-sidebar ion-icon {
+  margin-right: 10px;
+}
+
+#TPwrapper #main-sidebar #sidebar {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px;
+  background-color: #ecd5ea5b;
+}
+
+#TPwrapper #main-sidebar #main {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px;
+}
+/*# sourceMappingURL=style.css.map */
